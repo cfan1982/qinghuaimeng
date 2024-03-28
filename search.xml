@@ -2,11 +2,25 @@
 <search>
   <entry>
     <title>书剑情怀站</title>
-    <url>/qinghuaimeng/2024/03/26/hello-world/</url>
-    <content><![CDATA[<h4 id="欢迎来到书剑情怀站，本站IP"><a href="#欢迎来到书剑情怀站，本站IP" class="headerlink" title="欢迎来到书剑情怀站，本站IP"></a>欢迎来到书剑情怀站，本站IP</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">8.142.134.153 5555    --情怀一站</span><br><span class="line">8.142.134.153 9999    --情怀二站</span><br><span class="line">8.142.134.153 7777    --情怀测试站</span><br><span class="line">8.142.134.153 3333    --情怀怀旧站</span><br></pre></td></tr></table></figure>
-<h4 id="情怀站门派攻略"><a href="#情怀站门派攻略" class="headerlink" title="情怀站门派攻略"></a>情怀站门派攻略</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">提供各门派初始技能搭配</span><br><span class="line">门派myconfig.txt配置</span><br></pre></td></tr></table></figure>
-<h4 id="情怀站LS机器"><a href="#情怀站LS机器" class="headerlink" title="情怀站LS机器"></a>情怀站LS机器</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">更新LS机器以及说明文档</span><br></pre></td></tr></table></figure>
-<h4 id="LUA脚本及技术探讨"><a href="#LUA脚本及技术探讨" class="headerlink" title="LUA脚本及技术探讨"></a>LUA脚本及技术探讨</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lua脚本技术探讨</span><br><span class="line">方便mud旅程的工具和使用技巧</span><br></pre></td></tr></table></figure>
+    <url>/mud/2024/03/26/hello-world/</url>
+    <content><![CDATA[<p>欢迎来到书剑情怀站，本站是绝技站。</p>
+<h4 id="IP地址："><a href="#IP地址：" class="headerlink" title="IP地址："></a>IP地址：</h4><ul>
+<li>8.142.134.153 5555    –情怀一站</li>
+<li>8.142.134.153 9999    –情怀二站</li>
+<li>8.142.134.153 7777    –情怀测试站</li>
+<li>8.142.134.153 3333    –情怀怀旧站</li>
+</ul>
+<h4 id="怀站门派攻略"><a href="#怀站门派攻略" class="headerlink" title="怀站门派攻略"></a>怀站门派攻略</h4><ul>
+<li>提供各门派初始技能搭配</li>
+<li>门派myconfig.txt配置</li>
+</ul>
+<h4 id="情怀站LS机器"><a href="#情怀站LS机器" class="headerlink" title="情怀站LS机器"></a>情怀站LS机器</h4><ul>
+<li>更新LS机器以及说明文档</li>
+</ul>
+<h4 id="LUA脚本及技术探讨"><a href="#LUA脚本及技术探讨" class="headerlink" title="LUA脚本及技术探讨"></a>LUA脚本及技术探讨</h4><ul>
+<li>lua脚本技术探讨</li>
+<li>方便mud旅程的工具和使用技巧</li>
+</ul>
 ]]></content>
   </entry>
 </search>
