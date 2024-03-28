@@ -5,19 +5,10 @@
     <url>/qinghuaimeng/2024/03/26/hello-world/</url>
     <content><![CDATA[<p>欢迎来到书剑情怀站，本站IP</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ 8.142.134.153 5555    --情怀一站</span><br><span class="line">$ 8.142.134.153 9999    --情怀二站</span><br><span class="line">$ 8.142.134.153 7777    --情怀测试站</span><br><span class="line">$ 8.142.134.153 3333    --情怀怀旧站</span><br></pre></td></tr></table></figure>
+<h2 id="情怀站门派攻略"><a href="#情怀站门派攻略" class="headerlink" title="情怀站门派攻略"></a>情怀站门派攻略</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="情怀站LS机器"><a href="#情怀站LS机器" class="headerlink" title="情怀站LS机器"></a>情怀站LS机器</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="LUA脚本及技术普及"><a href="#LUA脚本及技术普及" class="headerlink" title="LUA脚本及技术普及"></a>LUA脚本及技术普及</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
