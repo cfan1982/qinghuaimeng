@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>codelist</title>
+    <url>/qinghuaimeng/2025/02/03/codelist/</url>
+    <content><![CDATA[<pre><code class="lua">a = 5               -- 全局变量
+local b = 5         -- 局部变量
+
+function joke()
+    c = 5           -- 全局变量
+    local d = 6     -- 局部变量
+end
+
+joke()
+print(c,d)          --&gt; 5 nil
+
+do
+    local a = 6     -- 局部变量
+    b = 6           -- 对局部变量重新赋值
+    print(a,b);     --&gt; 6 6
+end
+
+print(a,b)      --&gt; 5 6
+</code></pre>
+]]></content>
+  </entry>
+  <entry>
     <title>书剑情怀站</title>
-    <url>/qinghuaimeng/2024/03/26/hello-world/</url>
+    <url>/qinghuaimeng/2025/02/03/hello-world/</url>
     <content><![CDATA[<p>欢迎来到书剑情怀站，本站是绝技站以玩家玩的爽为宗旨。</p>
 <h4 id="IP地址："><a href="#IP地址：" class="headerlink" title="IP地址："></a>IP地址：</h4><ul>
 <li>8.142.134.153 5555    –情怀一站</li>
