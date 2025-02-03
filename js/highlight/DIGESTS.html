@@ -1,0 +1,26 @@
+<h2 id="Subresource-Integrity"><a href="#Subresource-Integrity" class="headerlink" title="Subresource Integrity"></a>Subresource Integrity</h2><p>If you are loading Highlight.js via CDN you may wish to use <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> to guarantee that you are using a legimitate build of the library.</p>
+<p>To do this you simply need to add the <code>integrity</code> attribute for each JavaScript file you download via CDN. These digests are used by the browser to confirm the files downloaded have not been modified.</p>
+<pre><code class="html">&lt;script
+  src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js&quot;
+  integrity=&quot;sha384-pGqTJHE/m20W4oDrfxTVzOutpMhjK3uP/0lReY0Jq/KInpuJSXUnk4WAYbciCLqT&quot;&gt;&lt;/script&gt;
+&lt;!-- including any other grammars you might need to load --&gt;
+&lt;script
+  src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/go.min.js&quot;
+  integrity=&quot;sha384-Mtb4EH3R9NMDME1sPQALOYR8KGqwrXAtmc6XGxDd0XaXB23irPKsuET0JjZt5utI&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>The full list of digests for every file can be found below.</p>
+<h3 id="Digests"><a href="#Digests" class="headerlink" title="Digests"></a>Digests</h3><pre><code>sha384-qimhSkVWof5rfaFajQk8KAtzSRYyIArcJCMKWdDcNq34F4uplk08wmEyUiYLmO+3 /es/languages/c.js
+sha384-5fESKgrRcGs7I/89bn7NKFcHyvIVcmQIG4JfCEAV5Rg5VVtskrmGkHVOIsD1642v /es/languages/c.min.js
+sha384-OJrXTVCemUa68axskWVxZHXuDfyPWWFK0X2cJsPaMBt6jGY1HxnBZJVPEHTqou4H /es/languages/lua.js
+sha384-cjlU8DPjZ3XY/dLzIx+CaoB2jzKXf43s2KSU2rZQGmxwR1d7k9p+SFt1IsNkFnnV /es/languages/lua.min.js
+sha384-JkFMmKMbHcXjdfHauRnREGG6i73GyMisdqNivBm4Z9m2Oc82YIu5jQtIjLa508e8 /es/languages/markdown.js
+sha384-65/lNNIY+ayhHTtFznjnyZ5w2NDdZIpSEcqjss/p4ex5JamZ46FdYwDDf6IBLCmE /es/languages/markdown.min.js
+sha384-WHdxyD51Y+ytDdcYGVkKHQOThUwwhLl/1GvZxHTHL4ImI4NS32L/B8bvB/1zN/Mk /languages/c.js
+sha384-jtwnwOYA+K4zYN55fA4z4U0PTK5oEp4RcLYaXkYRKO3UUzge1o21ArmvKmTRdh/d /languages/c.min.js
+sha384-N16TmpAW2Qx3T6s3/C0f0jweUUSh69YsJ1+AnOsAePpjmmydXF/mjeY0MZEF/cPn /languages/lua.js
+sha384-WES4Ky9nlehN2gBM6oY3/98hVtWF5PZnBO+7jK8ZVKFo+QR32zhfuRK+Mv9jQsOK /languages/lua.min.js
+sha384-TVvUXbmPgdS59xZSFUeyNQ1vUkeCbBpuMj3qlzdEwdQhoO5F/WNdI94UEw8g7Enp /languages/markdown.js
+sha384-sFh+6oaRBb6kdaMLf8x7qeH7NTvm2u1Ta6PtI0S8hoA+bP7UtHCyKFzaI1JBXwhT /languages/markdown.min.js
+sha384-SoLAlnMICxParLCBLhyiYhUGGbYu5qPDwwEtVSzabVMRIMILPi+Pj7FOfTP/wyzb /highlight.js
+sha384-KE5kq6RaTbMH7QiY9ApLaWucYAfsqhyYk18LX1HCKnP+YgkvfdLf7EHkr1t6Ki30 /highlight.min.js
+</code></pre>
