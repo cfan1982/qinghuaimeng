@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>codelist</title>
-    <url>/qinghuaimeng/2025/02/03/codelist/</url>
-    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> letter <span class="keyword">in</span> <span class="string">&#x27;Python&#x27;</span>:     <span class="comment"># 第一个实例</span></span><br><span class="line">   <span class="keyword">if</span> letter == <span class="string">&#x27;h&#x27;</span>:</span><br><span class="line">      <span class="keyword">break</span></span><br><span class="line">   <span class="built_in">print</span> <span class="string">&#x27;当前字母 :&#x27;</span>, letter</span><br><span class="line">var = <span class="number">10</span>                    <span class="comment"># 第二个实例</span></span><br><span class="line"><span class="keyword">while</span> var &gt; <span class="number">0</span>:</span><br><span class="line">   <span class="built_in">print</span> <span class="string">&#x27;当前变量值 :&#x27;</span>, var</span><br><span class="line">   var = var -<span class="number">1</span></span><br><span class="line">   <span class="keyword">if</span> var == <span class="number">5</span>:   <span class="comment"># 当变量 var 等于 5 时退出循环</span></span><br><span class="line">      <span class="keyword">break</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">&quot;Good bye!&quot;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>书剑情怀站</title>
-    <url>/qinghuaimeng/2025/02/03/index/</url>
-    <content><![CDATA[<p>欢迎来到书剑情怀站，本站是绝技站以玩家玩的爽为宗旨。</p>
-<h4 id="IP地址："><a href="#IP地址：" class="headerlink" title="IP地址："></a>IP地址：</h4><ul>
-<li>211.101.234.106 5555    –情怀一站</li>
-<li>211.101.234.106 9999    –情怀二站</li>
-<li>211.101.234.106 7777    –情怀测试站</li>
-<li>211.101.234.106 3333    –情怀怀旧站</li>
-</ul>
-<h4 id="怀站门派攻略"><a href="#怀站门派攻略" class="headerlink" title="怀站门派攻略"></a>怀站门派攻略</h4><ul>
-<li>提供各门派初始技能搭配</li>
-<li>门派myconfig.txt配置</li>
-</ul>
-<h4 id="情怀站LS机器"><a href="#情怀站LS机器" class="headerlink" title="情怀站LS机器"></a>情怀站LS机器</h4><ul>
-<li>更新LS机器以及说明文档</li>
-</ul>
-<h4 id="LUA脚本及技术探讨"><a href="#LUA脚本及技术探讨" class="headerlink" title="LUA脚本及技术探讨"></a>LUA脚本及技术探讨</h4><ul>
-<li>lua脚本技术探讨</li>
-<li>方便mud旅程的工具和使用技巧</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/qinghuaimeng/2025/02/03/test/</url>
-    <content><![CDATA[<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">add_trigger(<span class="string">&quot;battleship_18&quot;</span>, <span class="string">&quot;\^\\s*血海夺岛成功,你成功获得(.*)&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> challenge_log = params[<span class="number">1</span>]</span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.x .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.Y .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛挑战成功，获得【&quot;</span> .. challenge_log .. <span class="string">&quot;】&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line">add_trigger(<span class="string">&quot;battleship_19&quot;</span>, <span class="string">&quot;\^\\s*请明天再来执行血海夺岛任务吧&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   <span class="keyword">local</span> now_time = get_time()</span><br><span class="line">   now_time = now_time + <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span></span><br><span class="line">   send(<span class="string">&quot;alias 挑战情怀岛 &quot;</span> .. now_time)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.c .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.R .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛副本间隔未满24小时&quot;</span>)</span><br><span class="line">   exec(<span class="string">&quot;changejob&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>书剑情怀站</title>
+      <link href="/qinghuaimeng/2025/02/03/index/"/>
+      <url>/qinghuaimeng/2025/02/03/index/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到书剑情怀站，本站是绝技站以玩家玩的爽为宗旨。</p><h4 id="IP地址："><a href="#IP地址：" class="headerlink" title="IP地址："></a>IP地址：</h4><ul><li>211.101.234.106 5555    –情怀一站</li><li>211.101.234.106 9999    –情怀二站</li><li>211.101.234.106 7777    –情怀测试站</li><li>211.101.234.106 3333    –情怀怀旧站</li></ul><h4 id="怀站门派攻略"><a href="#怀站门派攻略" class="headerlink" title="怀站门派攻略"></a>怀站门派攻略</h4><ul><li>提供各门派初始技能搭配</li><li>门派myconfig.txt配置</li></ul><h4 id="情怀站LS机器"><a href="#情怀站LS机器" class="headerlink" title="情怀站LS机器"></a>情怀站LS机器</h4><ul><li>更新LS机器以及说明文档</li></ul><h4 id="LUA脚本及技术探讨"><a href="#LUA脚本及技术探讨" class="headerlink" title="LUA脚本及技术探讨"></a>LUA脚本及技术探讨</h4><ul><li>lua脚本技术探讨</li><li>方便mud旅程的工具和使用技巧</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>codelist</title>
+      <link href="/qinghuaimeng/2025/02/03/codelist/"/>
+      <url>/qinghuaimeng/2025/02/03/codelist/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> letter <span class="keyword">in</span> <span class="string">&#x27;Python&#x27;</span>:     <span class="comment"># 第一个实例</span></span><br><span class="line">   <span class="keyword">if</span> letter == <span class="string">&#x27;h&#x27;</span>:</span><br><span class="line">      <span class="keyword">break</span></span><br><span class="line">   <span class="built_in">print</span> <span class="string">&#x27;当前字母 :&#x27;</span>, letter</span><br><span class="line">var = <span class="number">10</span>                    <span class="comment"># 第二个实例</span></span><br><span class="line"><span class="keyword">while</span> var &gt; <span class="number">0</span>:</span><br><span class="line">   <span class="built_in">print</span> <span class="string">&#x27;当前变量值 :&#x27;</span>, var</span><br><span class="line">   var = var -<span class="number">1</span></span><br><span class="line">   <span class="keyword">if</span> var == <span class="number">5</span>:   <span class="comment"># 当变量 var 等于 5 时退出循环</span></span><br><span class="line">      <span class="keyword">break</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">&quot;Good bye!&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test</title>
+      <link href="/qinghuaimeng/2025/02/03/test/"/>
+      <url>/qinghuaimeng/2025/02/03/test/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">add_trigger(<span class="string">&quot;battleship_18&quot;</span>, <span class="string">&quot;\^\\s*血海夺岛成功,你成功获得(.*)&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> challenge_log = params[<span class="number">1</span>]</span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.x .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.Y .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛挑战成功，获得【&quot;</span> .. challenge_log .. <span class="string">&quot;】&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line">add_trigger(<span class="string">&quot;battleship_19&quot;</span>, <span class="string">&quot;\^\\s*请明天再来执行血海夺岛任务吧&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   <span class="keyword">local</span> now_time = get_time()</span><br><span class="line">   now_time = now_time + <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span></span><br><span class="line">   send(<span class="string">&quot;alias 挑战情怀岛 &quot;</span> .. now_time)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.c .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.R .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛副本间隔未满24小时&quot;</span>)</span><br><span class="line">   exec(<span class="string">&quot;changejob&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
