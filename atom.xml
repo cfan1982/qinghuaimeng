@@ -58,4 +58,24 @@
     
   </entry>
   
+  <entry>
+    <title>test</title>
+    <link href="https://cfan1982.github.io/qinghuaimeng/2025/02/03/test/"/>
+    <id>https://cfan1982.github.io/qinghuaimeng/2025/02/03/test/</id>
+    <published>2025-02-03T08:08:54.000Z</published>
+    <updated>2025-02-03T15:33:19.157Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">add_trigger(<span class="string">&quot;battleship_18&quot;</span>, <span class="string">&quot;\^\\s*血海夺岛成功,你成功获得(.*)&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> challenge_log = params[<span class="number">1</span>]</span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.x .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.Y .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛挑战成功，获得【&quot;</span> .. challenge_log .. <span class="string">&quot;】&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line">add_trigger(<span class="string">&quot;battleship_19&quot;</span>, <span class="string">&quot;\^\\s*请明天再来执行血海夺岛任务吧&quot;</span>, <span class="function"><span class="keyword">function</span><span class="params">(params)</span></span></span><br><span class="line">   <span class="keyword">local</span> id = var[<span class="string">&quot;char_id&quot;</span>] <span class="keyword">or</span> <span class="string">&quot;none&quot;</span></span><br><span class="line">   <span class="keyword">local</span> os_date = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&quot;%m/%d %H:%M:%S&quot;</span>)</span><br><span class="line">   <span class="keyword">local</span> now_time = get_time()</span><br><span class="line">   now_time = now_time + <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span></span><br><span class="line">   send(<span class="string">&quot;alias 挑战情怀岛 &quot;</span> .. now_time)</span><br><span class="line">   echo(<span class="string">&quot;\n&quot;</span> .. C.c .. <span class="string">&quot;&lt;解密&gt;:&quot;</span> .. os_date .. C.R .. <span class="string">&quot;【玩家:&quot;</span> .. id .. <span class="string">&quot;】：情怀岛副本间隔未满24小时&quot;</span>)</span><br><span class="line">   exec(<span class="string">&quot;changejob&quot;</span>)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
 </feed>
