@@ -820,7 +820,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const forPostFn = () => {
     addHighlightTool()
     addPhotoFigcaption()
-    addJustifiedGallery(document.querySelectorAll('#article-container .gallery-container'))
+    // 明确调用 addJustifiedGallery 函数
+    const galleryContainers = document.querySelectorAll('#article-container .gallery-container')
+    addJustifiedGallery(galleryContainers)
     runLightbox()
     scrollFnToDo()
     addTableWrap()
