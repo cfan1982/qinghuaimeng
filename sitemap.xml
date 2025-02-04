@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cfan1982.github.io/qinghuaimeng/2025/02/03/hello-world/</loc>
+    <loc>https://cfan1982.github.io/qinghuaimeng/code/index.html</loc>
+    
+    <lastmod>2025-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cfan1982.github.io/qinghuaimeng/2025/02/03/index/</loc>
+    
+    <lastmod>2025-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cfan1982.github.io/qinghuaimeng/code/ai1.html</loc>
     
     <lastmod>2025-02-04</lastmod>
     
@@ -165,24 +183,6 @@
   
   <url>
     <loc>https://cfan1982.github.io/qinghuaimeng/code/ai2.html</loc>
-    
-    <lastmod>2025-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cfan1982.github.io/qinghuaimeng/code/ai.html</loc>
-    
-    <lastmod>2025-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cfan1982.github.io/qinghuaimeng/code/index.html</loc>
     
     <lastmod>2025-01-30</lastmod>
     
