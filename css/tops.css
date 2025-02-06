@@ -1,0 +1,13 @@
+.card-widget.card-announcement{
+    display: none;
+}
+.card-widget.card-recent-post{
+    display: none;
+}
+.card-widget.card-webinfo{
+    display: none;
+}
+#card-widget.card-toc{
+    display: block;
+}
+
