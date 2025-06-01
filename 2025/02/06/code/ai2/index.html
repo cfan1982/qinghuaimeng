@@ -1,31 +1,31 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用AI看懂Lpc和Lua代码(deepseek篇) | 书剑情怀站</title><meta name="author" content="Cfan"><meta name="copyright" content="Cfan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="在编程学习过程中,有时会遇到难以理解的代码。本文将介绍如何使用VSCode配合通义灵码AI助手来帮助我们更好地理解代码。  准备工作1. 安装VSCode首先需要下载并安装VSCode编辑器:  官网下载地址: Visual Studio Code  2. 安装中文语言包为了更好的使用体验,建议安装中文语言包:  打开VSCode扩展商店(Ctrl+Shift+X) 搜索’Chinese’">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用AI看懂Lpc和Lua代码(deepseek篇) | 书剑情怀站</title><meta name="author" content="Cfan"><meta name="copyright" content="Cfan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="【1】引言最近deepseek很火，我也尝试了一下使用deepseek，确实效果显著。 一般来说，如果我懒得自己从头到尾写代码，往往是复制别人的成型代码，然后拿过来修修改改。还是要耗费一些时间，也必须对代码有所认识。 但实际工作面对的需求往往千奇百怪，要想高效满足所有需求，不得不想办法学习更过知识来满足工需求。但无论如何，学习总需要时间，也要切好找得到相应的学习资源。 AI在一定程度上缓解率为">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用AI看懂Lpc和Lua代码(deepseek篇)">
-<meta property="og:url" content="https://cfan1982.github.io/qinghuaimeng/2025/02/06/code/ai2/index.html">
+<meta property="og:url" content="https://www.qinghuaimeng.top/2025/02/06/code/ai2/index.html">
 <meta property="og:site_name" content="书剑情怀站">
-<meta property="og:description" content="在编程学习过程中,有时会遇到难以理解的代码。本文将介绍如何使用VSCode配合通义灵码AI助手来帮助我们更好地理解代码。  准备工作1. 安装VSCode首先需要下载并安装VSCode编辑器:  官网下载地址: Visual Studio Code  2. 安装中文语言包为了更好的使用体验,建议安装中文语言包:  打开VSCode扩展商店(Ctrl+Shift+X) 搜索’Chinese’">
+<meta property="og:description" content="【1】引言最近deepseek很火，我也尝试了一下使用deepseek，确实效果显著。 一般来说，如果我懒得自己从头到尾写代码，往往是复制别人的成型代码，然后拿过来修修改改。还是要耗费一些时间，也必须对代码有所认识。 但实际工作面对的需求往往千奇百怪，要想高效满足所有需求，不得不想办法学习更过知识来满足工需求。但无论如何，学习总需要时间，也要切好找得到相应的学习资源。 AI在一定程度上缓解率为">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cfan1982.github.io/qinghuaimeng/images/deepseek.png">
+<meta property="og:image" content="https://www.qinghuaimeng.top/images/deepseek.png">
 <meta property="article:published_time" content="2025-02-06T15:59:38.518Z">
-<meta property="article:modified_time" content="2025-02-08T15:09:34.852Z">
+<meta property="article:modified_time" content="2025-03-21T02:26:37.649Z">
 <meta property="article:author" content="Cfan">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cfan1982.github.io/qinghuaimeng/images/deepseek.png"><script type="application/ld+json">{
+<meta name="twitter:image" content="https://www.qinghuaimeng.top/images/deepseek.png"><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "用AI看懂Lpc和Lua代码(deepseek篇)",
-  "url": "https://cfan1982.github.io/qinghuaimeng/2025/02/06/code/ai2/",
-  "image": "https://cfan1982.github.io/qinghuaimeng/images/deepseek.png",
+  "url": "https://www.qinghuaimeng.top/2025/02/06/code/ai2/",
+  "image": "https://www.qinghuaimeng.top/images/deepseek.png",
   "datePublished": "2025-02-06T15:59:38.518Z",
-  "dateModified": "2025-02-08T15:09:34.852Z",
+  "dateModified": "2025-03-21T02:26:37.649Z",
   "author": [
     {
       "@type": "Person",
       "name": "Cfan",
-      "url": "https://cfan1982.github.io/qinghuaimeng/"
+      "url": "https://www.qinghuaimeng.top/"
     }
   ]
-}</script><link rel="shortcut icon" href="/qinghuaimeng/img/favicon.png"><link rel="canonical" href="https://cfan1982.github.io/qinghuaimeng/2025/02/06/code/ai2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/qinghuaimeng/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.qinghuaimeng.top/2025/02/06/code/ai2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
     (() => {
       
     const saveToLocal = {
@@ -116,7 +116,7 @@
   
     })()
   </script><script>const GLOBAL_CONFIG = {
-  root: '/qinghuaimeng/',
+  root: '/',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
@@ -158,52 +158,69 @@
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/qinghuaimeng/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/qinghuaimeng/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/qinghuaimeng/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/qinghuaimeng/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/qinghuaimeng/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/qinghuaimeng/code/"><i class="fa-fw fa fa-check-square"></i><span> 技术探讨</span></a></div><div class="menus_item"><a class="site-page" href="/qinghuaimeng/backup/"><i class="fa-fw fa fa-book"></i><span> 资料备份</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/deepseek.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/qinghuaimeng/"><span class="site-name">书剑情怀站</span></a><a class="nav-page-title" href="/qinghuaimeng/"><span class="site-name">用AI看懂Lpc和Lua代码(deepseek篇)</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/qinghuaimeng/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/qinghuaimeng/code/"><i class="fa-fw fa fa-check-square"></i><span> 技术探讨</span></a></div><div class="menus_item"><a class="site-page" href="/qinghuaimeng/backup/"><i class="fa-fw fa fa-book"></i><span> 资料备份</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">用AI看懂Lpc和Lua代码(deepseek篇)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-08T15:09:34.852Z" title="更新于 2025-02-08 23:09:34">2025-02-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">409</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet" href="/qinghuaimeng/css/tops.css">
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/code/"><i class="fa-fw fa fa-check-square"></i><span> 技术探讨</span></a></div><div class="menus_item"><a class="site-page" href="/backup/"><i class="fa-fw fa fa-book"></i><span> 资料备份</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">书剑情怀站</span></a><a class="nav-page-title" href="/"><span class="site-name">用AI看懂Lpc和Lua代码(deepseek篇)</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/code/"><i class="fa-fw fa fa-check-square"></i><span> 技术探讨</span></a></div><div class="menus_item"><a class="site-page" href="/backup/"><i class="fa-fw fa fa-book"></i><span> 资料备份</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">用AI看懂Lpc和Lua代码(deepseek篇)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-21T02:26:37.649Z" title="更新于 2025-03-21 10:26:37">2025-03-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div><article class="container post-content" id="article-container"><link rel="stylesheet" href="/css/tops.css">
 
-
-<blockquote>
-<p>在编程学习过程中,有时会遇到难以理解的代码。本文将介绍如何使用VSCode配合通义灵码AI助手来帮助我们更好地理解代码。</p>
-</blockquote>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="1-安装VSCode"><a href="#1-安装VSCode" class="headerlink" title="1. 安装VSCode"></a>1. 安装VSCode</h3><p>首先需要下载并安装VSCode编辑器:</p>
-<ul>
-<li>官网下载地址: <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-</ul>
-<h3 id="2-安装中文语言包"><a href="#2-安装中文语言包" class="headerlink" title="2. 安装中文语言包"></a>2. 安装中文语言包</h3><p>为了更好的使用体验,建议安装中文语言包:</p>
-<ol>
-<li>打开VSCode扩展商店(Ctrl+Shift+X)</li>
-<li>搜索’Chinese’</li>
-<li>安装<code>Chinese (Simplified) </code></li>
-<li>重启VSCode后界面即变为中文</li>
-</ol>
-<p><img src="/qinghuaimeng/images/image-20240329014457734.png" alt="图片1"></p>
-<h3 id="3-安装通义灵码插件"><a href="#3-安装通义灵码插件" class="headerlink" title="3. 安装通义灵码插件"></a>3. 安装通义灵码插件</h3><ol>
-<li>在扩展商店搜索<code>tongyilingma</code></li>
-<li>安装”通义灵码”插件</li>
-<li>根据提示注册阿里云账号并登录</li>
-</ol>
-<p><img src="/qinghuaimeng/images/image-20240329014644776.png" alt="图片1"></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>安装完成后:</p>
-<ul>
-<li>VSCode左侧边栏会出现通义灵码图标</li>
-<li>编辑器中右键菜单会增加通义灵码相关选项</li>
-</ul>
-<p><img src="/qinghuaimeng/images/image-20240328232014090.png" alt="图片1"></p>
-<h3 id="生成代码注释"><a href="#生成代码注释" class="headerlink" title="生成代码注释"></a>生成代码注释</h3><ol>
-<li>选中需要理解的代码片段</li>
-<li>右键选择”通义灵码-生成注释”</li>
-<li>AI会自动分析代码并生成对应的中文注释</li>
-</ol>
-<p><img src="/qinghuaimeng/images/image-20240328232445717.png" alt="图片1"></p>
-<h3 id="深入理解代码"><a href="#深入理解代码" class="headerlink" title="深入理解代码"></a>深入理解代码</h3><p>如果生成的注释仍然难以理解,你可以:</p>
-<ol>
-<li>选中代码或注释</li>
-<li>右键选择”通义灵码-解释代码”</li>
-<li>AI会用更详细的方式解释代码的功能和原理</li>
-</ol>
-<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><ul>
-<li>对于复杂的代码块,可以先生成注释,再请求详细解释</li>
-<li>如果对某个具体概念不理解,可以直接询问AI</li>
-<li>建议结合实际运行结果来验证AI的解释</li>
-</ul>
-<p>通过以上方法,我们可以更轻松地理解Lpc和Lua等代码,提高学习效率。</p>
-</article><div class="tag_share"></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/qinghuaimeng/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Cfan</div><div class="author-info-description"></div><div class="site-data"><a href="/qinghuaimeng/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/qinghuaimeng/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/qinghuaimeng/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.cursor.com/"><i class="fab fa-github"></i><span>The AI Code Editor -- Cursor</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">书剑情怀站已稳定运行5年，欢迎大家访问！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85VSCode"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装VSCode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%AF%AD%E8%A8%80%E5%8C%85"><span class="toc-number">1.2.</span> <span class="toc-text">2. 安装中文语言包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85%E9%80%9A%E4%B9%89%E7%81%B5%E7%A0%81%E6%8F%92%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">3. 安装通义灵码插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A"><span class="toc-number">2.1.</span> <span class="toc-text">生成代码注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E4%BB%A3%E7%A0%81"><span class="toc-number">2.2.</span> <span class="toc-text">深入理解代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-number">3.</span> <span class="toc-text">小技巧</span></a></li></ol></div></div><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>系列文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)"><img src="/qinghuaimeng/images/vscode.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(通译灵码篇)"></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)">用AI看懂Lpc和Lua代码(通译灵码篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)"><img src="/qinghuaimeng/images/deepseek.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(deepseek篇)"></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)">用AI看懂Lpc和Lua代码(deepseek篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/27/notice/" title="书剑情怀站公告"><img src="/qinghuaimeng/images/R-C.jpg" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="书剑情怀站公告"/></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/27/notice/" title="书剑情怀站公告">书剑情怀站公告</a><time datetime="2025-02-26T19:36:34.949Z" title="发表于 2025-02-27 03:36:34">2025-02-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)"><img src="/qinghuaimeng/images/vscode.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(通译灵码篇)"/></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)">用AI看懂Lpc和Lua代码(通译灵码篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)"><img src="/qinghuaimeng/images/deepseek.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(deepseek篇)"/></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)">用AI看懂Lpc和Lua代码(deepseek篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/index/" title="书剑情怀站介绍"><img src="/qinghuaimeng/images/qinghuai.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="书剑情怀站介绍"/></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/index/" title="书剑情怀站介绍">书剑情怀站介绍</a><time datetime="2025-02-06T10:05:54.055Z" title="发表于 2025-02-06 18:05:54">2025-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/qinghuaimeng/2025/02/06/Strategy/mj/" title="明教攻略"><img src="/qinghuaimeng/images/mj.png" onerror="this.onerror=null;this.src='/qinghuaimeng/img/404.jpg'" alt="明教攻略"/></a><div class="content"><a class="title" href="/qinghuaimeng/2025/02/06/Strategy/mj/" title="明教攻略">明教攻略</a><time datetime="2025-02-06T10:05:54.040Z" title="发表于 2025-02-06 18:05:54">2025-02-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Cfan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/qinghuaimeng/js/utils.js"></script><script src="/qinghuaimeng/js/main.js"></script><div class="js-pjax"></div></div></body></html>
+<h3 id="【1】引言"><a href="#【1】引言" class="headerlink" title="【1】引言"></a>【1】引言</h3><p>最近<code>deepseek</code>很火，我也尝试了一下使用<code>deepseek</code>，确实效果显著。</p>
+<p>一般来说，如果我懒得自己从头到尾写代码，往往是复制别人的成型代码，然后拿过来修修改改。还是要耗费一些时间，也必须对代码有所认识。</p>
+<p>但实际工作面对的需求往往千奇百怪，要想高效满足所有需求，不得不想办法学习更过知识来满足工需求。但无论如何，学习总需要时间，也要切好找得到相应的学习资源。</p>
+<p>AI在一定程度上缓解率为我们的学习焦虑，那进一步，如果它们直接输出代码，岂不是更好。现在已经有多种可以直接输出代码的AI ，但我们使用中也会遇到个各各样奇怪或者说令人哭笑不得的问题，比如满足了新要求却丢了旧要求，比如面对有些bug永远不会承认。</p>
+<p>其实更令人难受的，有些时候你需要从AI的回答里复制代码自己去运行，然而当需求较多时，代码突然输出不全，并且提示对话字数已经满额。</p>
+<p>所以，如果代码可以直接在编译器中输出，并且直接修正，下过可能会好很多。</p>
+<p>deepseek恰好就能满足这样的需求。众所周知还有其他的工具也能满足这些需求，请大家按需使用。</p>
+<h3 id="【2】使用教程"><a href="#【2】使用教程" class="headerlink" title="【2】使用教程"></a>【2】使用教程</h3><p><strong>第一步：</strong></p>
+<p>首先要有VScode，如果没有就安装一个。具体教程好多兄弟们的博客都讲了，此处不再赘述。</p>
+<p>然后打开VScode，在扩展里面搜索<code>Cline</code>，选择第一个，记得确认它也是下载量最大的那一个：</p>
+<p><img src="/images/ed2437705b1d4a6f9d7fcbb836435ae3.png" alt="ed2437705b1d4a6f9d7fcbb836435ae3.png"></p>
+<p>图1</p>
+<p>然后安装这个扩展，非常快。我这里的<code>828ms</code>表示我已经安装过了，大家点击安装即可。</p>
+<p><strong>第二步：</strong></p>
+<p><code>Cline</code>安装完成之后，会在VScode的左侧工具栏看到一个类似机器人的图标，点击一下它：</p>
+<p><img src="/images/a442ab4074a942a2b3a1a5a7c532ef28.png" alt="a442ab4074a942a2b3a1a5a7c532ef28.png"></p>
+<p>图2</p>
+<p><strong>第三步：</strong></p>
+<p>点完机器人图标之后就来到一个配置界面，记住点击齿轮进行配置，首先把API Provider选择为“OpenAI Compatible”：</p>
+<p><img src="/images/ffb5b9bb675a45d0a44a13703edb1684.png" alt="ffb5b9bb675a45d0a44a13703edb1684.png"></p>
+<p>图3</p>
+<p><strong>第四步：</strong></p>
+<p>点击齿轮settings会进入图3这个界面，界面标出了1234一共四个框，这是需要填写除API Provider的配置内容。</p>
+<p>如何填写配置内容，就要进入<code>deepseek</code>官网获得相关信息，官网链接为：</p>
+<p><a target="_blank" rel="noopener" href="https://www.deepseek.com/" title="DeepSeek">DeepSeek</a></p>
+<p>进入官网，会看到下述界面：</p>
+<p><img src="/images/27e5456d38b4423bac2dcb8c49e275e2.png" alt="27e5456d38b4423bac2dcb8c49e275e2.png"></p>
+<p>图4</p>
+<p><strong>第五步：</strong></p>
+<p>在官网首页点击“接入API”，首次点击需要使用手机注册。目前可以放心注册，输入手机号，获取验证码，然后就可以进入登陆后的界面：</p>
+<p><img src="/images/91413ba939ce41f2b95fa5319e98d93e.png" alt="91413ba939ce41f2b95fa5319e98d93e.png"></p>
+<p>图5</p>
+<p>图5所示的页面是我的账户登录成功后的界面，可以看到网站一共赠送了10元的额度，我已经使用0.26元，大家初次打开应该都是10元满额。</p>
+<p><strong>第六步：</strong></p>
+<p>点击登陆成功页面的API keys，选择创建API：</p>
+<p><img src="/images/e13012ab5e60476db635ff7180561b6a.png" alt="e13012ab5e60476db635ff7180561b6a.png"></p>
+<p>图6</p>
+<p><strong>第七步</strong>：</p>
+<p>在创建API页面，名称可以随便写，然后点击创建，会生成一个key，点击复制保存这个key，因为之后它就不会再完整显示了：</p>
+<p><img src="/images/bb91bd7b9e2b4c5aa9582bf37ac76d29.png" alt="bb91bd7b9e2b4c5aa9582bf37ac76d29.png"></p>
+<p>图7</p>
+<p>然后在这个登录成功界面会看到你创建的所有API：</p>
+<p><img src="/images/fd340049bef14de3a76f2c61924baf30.png" alt="fd340049bef14de3a76f2c61924baf30.png"></p>
+<p>图8</p>
+<p><strong>第八步：</strong></p>
+<p>然后再回到页面左侧，会有一个“接口文档”，点击它：</p>
+<p><img src="/images/68aa3a8a7e9146258f5b059c4bc7ac4e.png" alt="68aa3a8a7e9146258f5b059c4bc7ac4e.png"></p>
+<p>图9</p>
+<p>然后我们就会进入接口文档的说明界面，在这个界面，会找到图3所需要的部分信息：</p>
+<p><img src="/images/8f03714d4b4a48d18da4037280723959.png" alt="8f03714d4b4a48d18da4037280723959.png"></p>
+<p>图10</p>
+<p>在这里，图3需要的Base URL和Model ID就找到了。然后API Key在第七步你已经复制了，把它填进去就行。</p>
+<p><strong>第九步：</strong></p>
+<p>填完信息记得点击Done:</p>
+<p><img src="/images/8f74a598cef2499caa7511ebed75899b.png" alt="8f74a598cef2499caa7511ebed75899b.png"></p>
+<p>图11</p>
+<p><strong>第十步：</strong></p>
+<p>然后输入你的想法，开始你愉快的coding。</p>
+<p><img src="/images/e6c9a83ed8ea42fa91995233b9cd096d.png" alt="e6c9a83ed8ea42fa91995233b9cd096d.png"></p>
+<p>图12</p>
+<h3 id="【3】总结"><a href="#【3】总结" class="headerlink" title="【3】总结"></a>【3】总结</h3><p>提供了VScode配置<code>deepseek</code>为API实现代码自动生成的技巧。<br>版权声明：本文为西猫雷婶原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44855046/article/details/145002489">https://blog.csdn.net/weixin_44855046/article/details/145002489</a></p>
+<h3 id="【4】zmuder注意事项"><a href="#【4】zmuder注意事项" class="headerlink" title="【4】zmuder注意事项"></a>【4】zmuder注意事项</h3><p>提醒一下zmuder，本文介绍方法经过本人实践可正常使用，但<code>deepseek API</code>是需要付费的，如果你不想付费那么请自己查找可用的<code>deepseek API</code>或者使用网页版<br>或者本地架设<code>deepseek</code>模型，但是本地模型对电脑要求高且需要一定的技术水平，如果你有兴趣可以自己查找资料进行尝试。deepseek第三方免费chat或者收费的API，<br>暂时我只收集到<a target="_blank" rel="noopener" href="https://www.volcengine.com/product/doubao">火山引擎</a>、<a target="_blank" rel="noopener" href="https://yuanbao.tencent.com/">腾讯元宝</a>、<a target="_blank" rel="noopener" href="https://account.siliconflow.cn/zh/login">硅基流动</a>。</p>
+<h3 id="【5】已知免费deepseek-api"><a href="#【5】已知免费deepseek-api" class="headerlink" title="【5】已知免费deepseek api"></a>【5】已知免费deepseek api</h3><p>阿里推出的通译灵码经过更新后新增了deepseek R1，可以免费使用，但是使用体验不如qwq-plus，可以自行体会使用哪个模型。</p>
+</article><div class="tag_share"></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Cfan</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.cursor.com/"><i class="fab fa-github"></i><span>The AI Code Editor -- Cursor</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">书剑情怀站已稳定运行6年，欢迎大家访问！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%901%E3%80%91%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">【1】引言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%902%E3%80%91%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">【2】使用教程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%903%E3%80%91%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">【3】总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%904%E3%80%91zmuder%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">4.</span> <span class="toc-text">【4】zmuder注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%905%E3%80%91%E5%B7%B2%E7%9F%A5%E5%85%8D%E8%B4%B9deepseek-api"><span class="toc-number">5.</span> <span class="toc-text">【5】已知免费deepseek api</span></a></li></ol></div></div><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>系列文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)"><img src="/images/vscode.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(通译灵码篇)"></a><div class="content"><a class="title" href="/2025/02/06/code/ai1/" title="用AI看懂Lpc和Lua代码(通译灵码篇)">用AI看懂Lpc和Lua代码(通译灵码篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)"><img src="/images/deepseek.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用AI看懂Lpc和Lua代码(deepseek篇)"></a><div class="content"><a class="title" href="/2025/02/06/code/ai2/" title="用AI看懂Lpc和Lua代码(deepseek篇)">用AI看懂Lpc和Lua代码(deepseek篇)</a><time datetime="2025-02-06T15:59:38.518Z" title="发表于 2025-02-06 23:59:38">2025-02-06</time></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/04/06/procedure/" title="Lua通用函数设定（陆续完善中）"><img src="/images/R-C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Lua通用函数设定（陆续完善中）"/></a><div class="content"><a class="title" href="/2025/04/06/procedure/" title="Lua通用函数设定（陆续完善中）">Lua通用函数设定（陆续完善中）</a><time datetime="2025-04-05T17:23:04.621Z" title="发表于 2025-04-06 01:23:04">2025-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/26/gift/" title="三站先天、转世属性"><img src="/images/learn.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="三站先天、转世属性"/></a><div class="content"><a class="title" href="/2025/03/26/gift/" title="三站先天、转世属性">三站先天、转世属性</a><time datetime="2025-03-26T08:11:33.526Z" title="发表于 2025-03-26 16:11:33">2025-03-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/24/jueji3/" title="情怀三站绝技系统"><img src="/images/jueji.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="情怀三站绝技系统"/></a><div class="content"><a class="title" href="/2025/03/24/jueji3/" title="情怀三站绝技系统">情怀三站绝技系统</a><time datetime="2025-03-24T08:43:39.135Z" title="发表于 2025-03-24 16:43:39">2025-03-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/23/Strategy/tz/" title="铁掌攻略"><img src="/images/tz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="铁掌攻略"/></a><div class="content"><a class="title" href="/2025/03/23/Strategy/tz/" title="铁掌攻略">铁掌攻略</a><time datetime="2025-03-23T11:38:16.778Z" title="发表于 2025-03-23 19:38:16">2025-03-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/21/jueji/" title="情怀一二站绝技系统"><img src="/images/jueji.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="情怀一二站绝技系统"/></a><div class="content"><a class="title" href="/2025/03/21/jueji/" title="情怀一二站绝技系统">情怀一二站绝技系统</a><time datetime="2025-03-21T03:53:48.793Z" title="发表于 2025-03-21 11:53:48">2025-03-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Cfan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://beian.miit.gov.cn/" target="_blank">ICP证书：陕ICP备2025062308号-1</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div></div></body></html>
