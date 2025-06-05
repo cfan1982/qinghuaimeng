@@ -2,7 +2,7 @@
     display: none;
 }
 .card-widget.card-recent-post{
-    display: none;
+    display: block;
 }
 .card-widget.card-webinfo{
     display: none;
@@ -10,4 +10,3 @@
 #card-widget.card-toc{
     display: block;
 }
-
